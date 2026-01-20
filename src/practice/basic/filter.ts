@@ -29,3 +29,17 @@ const users: User[] = [
 
 const activeUsers = users.filter(n => n.isActive);
 console.log(activeUsers);
+
+//filter→map
+const activeUserNames = users
+    .filter(user => user.isActive)
+    .map(user => user.name);
+
+console.log(activeUserNames);
+
+
+//やってみよう！
+const prices = [100, 200, 300, 400];
+const line = 300;
+const priceChoice = prices.filter(n => n >= line);
+console.log(priceChoice);
